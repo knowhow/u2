@@ -10,8 +10,10 @@
 --
 
 -- usage:  
--- find check if xtpos package is 3.x.x version: select package_is_version('xtpos', '3.[0-9].[0-9]');
--- find check if xtpos package is 3.x and patch number is 1 or 2 or 3: package_is_version('xtpos', '3.[0-9].[123]');
+-- find check if xtpos package is 3.x.x version                       : select package_is_version('xtpos', '3.[0-9].[0-9]');
+-- find check if xtpos package is 3.x and patch number is 1 or 2 or 3 : package_is_version('xtpos', '3.[0-9].[123]');
+-- find check if xtpos package is 3.x and patch number is 1 or 2 or 3,
+--  after patch number we could have arbitrary string (rc1, beta2 etc): package_is_version('xtpos', '3.[0-9].[123].*');
 
 
 CREATE OR REPLACE FUNCTION package_is_version(package_name text, regexp_version text) RETURNS boolean AS $$
