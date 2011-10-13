@@ -17,3 +17,15 @@ $ ./make_pkg.sh
 </pre>
 
 Dobijeni .gz sa updater-om instaliramo na knowhow/xtuple.
+
+Korištenje
+----------
+
+pogledaj source. U komentarima imate usage case-ove:
+
+<pre>
+├── database
+│   └── misc
+│       ├── checkPackageVersion.sql 
+</pre>
+
