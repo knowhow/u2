@@ -2,7 +2,7 @@
          name="u2"
          developer="hernad@bring.out.ba"
          descrip="xtuple u2 package"
-         version="2.0.0"
+         version="2.1.0"
          updater="2.2.4">
   <pkgnotes></pkgnotes>
 
@@ -35,5 +35,6 @@
 
   <script file="database/misc/initPackage.sql" />
   <script file="database/misc/checkPackageVersion.sql" />
+  <script file="database/misc/execute.sql" />
 
 </package>
