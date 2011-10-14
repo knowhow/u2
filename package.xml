@@ -2,12 +2,12 @@
          name="u2"
          developer="hernad@bring.out.ba"
          descrip="xtuple u2 package"
-         version="1.0.1"
+         version="2.0.0"
          updater="2.2.4">
   <pkgnotes></pkgnotes>
 
   <prerequisite type="Query"
-                name="xTuple ERP version">
+                name="xTuple/knowhow version">
     <query>
       SELECT (SUBSTRING(fetchMetricText('ServerVersion') FOR 1) > '3') 
           OR (SUBSTRING(fetchMetricText('ServerVersion') FOR 1) = '3'
@@ -18,7 +18,7 @@
     </message>
   </prerequisite>
 
-  <prerequisite type="license" name="xTuple Concise EULA">
+  <prerequisite type="license" name="knowhow license">
     <message>
       &lt;p>
           This file is part of the knowhow ERP, a free and open source
