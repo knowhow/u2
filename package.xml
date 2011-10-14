@@ -33,8 +33,9 @@
     </message>
   </prerequisite>
 
-  <script file="database/misc/initPackage.sql" />
-  <script file="database/misc/checkPackageVersion.sql" />
+  <script file="database/misc/init_package.sql" />
+  <script file="database/misc/package_version.sql" />
   <script file="database/misc/execute.sql" />
+  <script file="database/misc/knowhow_package_version.sql" />
 
 </package>
