@@ -51,7 +51,7 @@ v_minor integer;
 v_patch integer;
 
 BEGIN
-        
+
     SELECT version INTO pkg_ver FROM u2._versions WHERE name = package_name;
 
     if NOT FOUND THEN
@@ -64,5 +64,8 @@ BEGIN
         return v_major * 10000 + v_minor * 100 + v_patch;
     END IF; 
 
+EXCEPTION WHEN OTHERS THEN
+        RAISE NOTICE 'nema tabele u2._versions';
+        return 0;
 END;
 $$ LANGUAGE plpgsql;
