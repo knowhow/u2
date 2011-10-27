@@ -12,5 +12,9 @@ else
 fi
 
 mkdir package
-gnutar cvfz package/$PKG_NAME.gz ../$PKG_DIR/ --exclude=*.gz --exclude=.git
 
+cd ..; $TAR cvfz $PKG_DIR/package/$PKG_NAME.gz  --exclude="*/.gitignore" --exclude="*/package" --exclude="*.gz" --exclude="*/.git" $PKG_DIR
+
+echo "----- result:  ----"
+cd $PKG_DIR
+ls package/$PKG_NAME.gz
