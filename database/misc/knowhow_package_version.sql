@@ -29,7 +29,7 @@ BEGIN
           
     IF m_cnt > 0 THEN
         UPDATE u2._versions SET version = m_version 
-            WHERE  name = package_name;
+            WHERE  name = package_name AND m_version > version;
     ELSE   
         INSERT INTO u2._versions(name, version) 
         VALUES (package_name, m_version); 
